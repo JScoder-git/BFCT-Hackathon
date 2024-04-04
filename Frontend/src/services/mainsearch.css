@@ -1,0 +1,130 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+
+.customSection {
+  padding: 0;
+  margin-top: 2rem;
+}
+
+.heade {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: -1%;
+}
+
+.custom__content {
+  padding: 50px 0;
+}
+
+.custom__content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.custom__content p {
+
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0%;
+}
+.custom__input input,
+.custom__btn {
+  flex: 1;
+  min-width: 0;
+}
+
+.custom__input {
+  margin-top: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: #5f5e5e;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 1), -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+
+.custom__input input:focus {
+  outline: none;
+}
+
+.custom__input input::placeholder {
+  color: white;
+}
+
+.custom__input input {
+  border: none;
+  font-size: 1.1rem;
+  color: white; /* Change placeholder color to white */
+  background-color: #5f5e5e;
+}
+
+.custom__btn {
+  padding: 0.5rem 1.5rem !important;
+  background: var(--primary-color) !important;
+  color: #fff !important;
+  font-size: 1.1rem;
+}
+
+.custom__content p {
+  color: var(--heading-color);
+  font-size: 1.1rem;
+}
+
+/* CSS for screens up to 992px */
+@media screen and (max-width: 992px) {
+  .custom__content h2 {
+    font-size: 2rem;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .custom__input {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding-top: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+  }
+  .custom__input input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ffffff;
+    border-radius: 5px;
+    width: 500px;
+  }
+  .custom__input button {
+    width: 80%;
+  }
+  .custom__content p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+}
+
+/* CSS for screens up to 576px */
+@media screen and (max-width: 576px) {
+  .custom__content h2 {
+    font-size: 1.5rem;
+  }
+  .custom__content p {
+    display: none;
+  }
+  .custom__input {
+    width: 100%;
+  }
+  .custom__input input {
+    width: 90%;
+  }
+}

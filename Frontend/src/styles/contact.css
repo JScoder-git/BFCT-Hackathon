@@ -1,0 +1,134 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.section {
+  padding: 30px 0;
+  background-color: #d8dadd;
+  border-bottom: 1px solid #ddd;
+}
+
+.section-title {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.section-title h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: -22px;
+  color: #007bff;
+}
+
+.section-title p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #666;
+}
+
+.contact-form {
+  width: 50%;
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  padding: 15px; /* Decreased padding */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.contact-form textarea {
+  height: 100px; /* Decreased height */
+}
+
+.contact-form button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #0062cc;
+}
+
+/* Additional styling for form layout */
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+
+.form-group {
+  flex: 1;
+  margin-right: 6px;
+}
+
+.form-group:last-child {
+  margin-right: 0;
+}
+
+/* Responsive styling for form layout */
+
+@media (max-width: 768px) {
+  .form-group {
+    flex: 1 1 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.center-button {
+  display: flex;
+  justify-content: center;
+}

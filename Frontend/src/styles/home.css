@@ -1,0 +1,274 @@
+.head {
+  text-align: center;
+  margin-top: 15%;
+}
+
+p {
+  padding-top: 1%;
+  font-size: 1.2rem;
+  color: #060000;
+  text-align: center;
+
+}
+
+.SearchBar {
+  padding-top: 3%;
+  padding-bottom: 4%;
+}
+
+.search-bar {
+  padding: 10px;
+  width: 700px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  align-items: center;
+  margin-left: 22.5%;
+}
+
+.search-bar:focus {
+  border-color: #66afe9; /* Change to any color you like */
+}
+
+/* Optional: Add some styles for the placeholder text */
+.search-bar::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+.heading_home {
+  text-align: center;
+  padding-top: 3%;
+  font-weight: 700;
+}
+
+.background-image {
+  position: relative;
+  background-image: url('../assets//images/home.png');
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-size: cover;
+  height: 500vh;
+}
+
+.lazyloaded {
+  width: 100vW;
+  height: 110vh;
+  margin-left: -16%;
+  margin-top: 4%;
+  transform: rotate(-4deg);
+}
+
+.lazy {
+  width: 60vw;
+  height: 60vh;
+  margin-top: -2%;
+  margin-left: -3%;
+  z-index: 99;
+  transform: rotate(-5deg);
+}
+
+.services__title {
+  text-align: center;
+  justify-content: center;
+  padding-top: 3%;
+  font-weight: 700;
+}
+
+.counter-container {
+  counter-reset: heart-counter 8000; /* Start the counter from 8000 */
+}
+
+.counter-text::before {
+  counter-increment: heart-counter;
+  content: counter(heart-counter);
+}
+
+@keyframes count-up {
+  from {
+    content: '8000';
+  }
+  to {
+    content: '10000';
+  }
+}
+
+.counter-text {
+  animation: count-up 20s linear;
+  animation-iteration-count: 1;
+}
+
+/* Prevent scrolling during animation */
+.prevent-scroll {
+  overflow: hidden;
+}
+
+/* Section styles */
+.section-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100vh;
+  padding: 20px;
+}
+
+/* Card container styles */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* Card styles */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 16px;
+  width: 600px;
+}
+
+.motos {
+  margin-top: 20%;
+}
+
+/* Card title styles */
+.card h3 {
+  margin-top: 7px;
+  color: aliceblue;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  text-underline-offset: 10px; /* Adjust this value to increase or decrease the gap */
+}
+
+
+/* Card description styles */
+.card p {
+  
+  font-size: 16px;
+  color: #ffffff;
+}
+
+/* Image styles */
+.image-container img {
+  max-width: 100%;
+}
+
+.background-image2 {
+  margin-top: 20%;
+  height: 600px;
+}
+
+.motto-cards {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 600px;
+  height: 600px;
+  position: relative;
+  margin-bottom: 20%;
+
+}
+.motto-card2{
+  margin-top: 80px;
+}
+.motto-card + .motto-card {
+  margin-top: 20px; 
+}
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.motto-cards .card-body {
+  padding: 20px;
+}
+
+.text-wrapper .card-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start ; 
+}
+
+
+.card-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1.2em;
+  color: #060000 !important;
+
+}
+
+.counter-animation-wrapper {
+  font-size: 3em;
+  position: absolute;
+  top: 50%;
+  right: 20px; 
+  transform: translateY(-50%);
+}
+
+.feedback-section {
+  color:white;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10%;
+}
+
+.feedback-form {
+  margin-top:8%;
+  width: 500px;
+  margin-right: auto; 
+  margin-left: 20rem; 
+}
+
+
+.feedback-form .form-group {
+  margin-bottom: 20px;
+}
+
+.feedback-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.feedback-form input[type="text"],
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.feedback-form textarea {
+  resize: vertical;
+}
+
+.feedback-form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.feedback-form button:hover {
+  background-color: #45a049;
+}
+
+.feedback-message {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}
